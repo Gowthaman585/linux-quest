@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D7D7DE;  
+    color: #333333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centers everything horizontally */
+    justify-content: flex-start; /* Aligns content toward the top */
+    min-height: 100vh;
+    padding-top: 15vh;         /* Pushes the content down from the very top edge */
+}
+
+.hero-header {
+    text-align: center;        /* Fixed 'centre' to valid CSS 'center' */
+    margin-bottom: 2rem;       /* Creates clean breathing room above the button */
+}
+
+h1 {
+    color: #01853D;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.action-area {
+    text-align: center;
+}
+
+.btn-start {
+    background-color: #5ED16F;
+    color: #000000;
+    border: none;
+    padding: 0.85rem 2.5rem;   /* Makes the button nicely proportioned */
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-start:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
