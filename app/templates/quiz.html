@@ -9,15 +9,15 @@
 <body>
     <header class="hero-header">
         <h1>Question {{ q.id }}</h1>
-	<p class="subtitle" style="max-width: 600px; margin: 0 auto 0 auto; text-align: left; line-height: 1.5;">{{ q.question }}</p>
+	<p class="quiz-question" >{{ q.question }}</p>
     </header>
 
     <main class="action-area" style="width: 100%; max-width: 500px; text-align: left;">
-        <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+	    <form action="{{ url_for('main.quiz_question',q_id=q.id) }}" method="POST" style="display: flex-direction: column; gap: 1 rem;">
             {% for choice in q.choices %}
-            <label style="background: #ffffff; padding: 1rem; border-radius: 6px; color: #333; cursor: pointer; display: flex; align-items: center; gap: 10px; font-weight: 500; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                <input type="radio" name="answer" value="{{ loop.index }}" style="accent-color: #01853D; transform: scale(1.2);">
-                {{ choice }}
+	    <label class="quiz-choice">
+		    <input type="radio" name="answer" value="{{ loop.index }}">
+		    {{ choice }}
             </label>
             {% endfor %}
 
