@@ -57,3 +57,39 @@ h1 {
     background-color: #16a34a;
     transform: translateY(-2px); /* Subtle lift effect */
 }
+
+.quiz-question {
+    font-size: 1.25rem;
+    color: #2D3748;
+    max-width: 650px;
+    margin: 1.2rem auto 0 auto;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, "Oxygen", Ubuntu, Cantarell, sans-serif;
+}
+.quiz-choice {
+    background: #ffffff;
+    padding: 1rem 1.2rem;
+    border-radius: 0px;
+    color: #2D3748;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.quiz-choice:hover {
+    background: #f7fafc;
+    transform: translateX(2px); /* Subtle shift to the right on hover */
+}
+
+.quiz-choice input[type="radio"] {
+    accent-color: #01853D; /* Matches your green theme */
+    transform: scale(1.2);
+    cursor: pointer;
+}
