@@ -26,6 +26,17 @@ QUESTIONS = [
         ],
         "correct": 2  # "Curve25519"
     }
+    {
+        "id": 3,
+        "question": "Which of the following statements is true regarding how the `scp` command works?",
+        "choices": [
+            "scp needs an active live SSH connection to transfer files.",
+            "scp does not need an SSH active connection to transfer files.",
+            "scp can be used to move files from a remote host to another remote host only.",
+            "scp can be used to move files remote to local or local to remote only."
+        ],
+        "correct": 1  # Option 1 is correct
+    }
 ]
 
 
