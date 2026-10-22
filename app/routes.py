@@ -25,7 +25,7 @@ QUESTIONS = [
             "RSA"
         ],
         "correct": 2  # "Curve25519"
-    }
+    },
     {
         "id": 3,
         "question": "Which of the following statements is true regarding how the `scp` command works?",
@@ -36,6 +36,17 @@ QUESTIONS = [
             "scp can be used to move files remote to local or local to remote only."
         ],
         "correct": 1  # Option 1 is correct
+    },
+    {
+        "id": 4,
+        "question": "Which of the following SSH key algorithms is commonly used for compatibility with older legacy systems?",
+        "choices": [
+            "ED25519",
+            "ECDSA",
+            "RSA",
+            "DSA"
+        ],
+        "correct": 3  # Option 3 (RSA)
     }
 ]
 
