@@ -47,6 +47,72 @@ QUESTIONS = [
             "DSA"
         ],
         "correct": 3  # Option 3 (RSA)
+    },
+    {
+        "id": 5,
+        "question": "In systemd-based Linux distributions, what is the primary role of \"ssh.socket\" when used alongside \"ssh.service\" ?",
+        "choices": [
+            "It maintains a constant background connection pool for active users.",
+            "It acts as a trigger to start \"ssh.service\" only when an incoming connection arrives.",
+            "It stores user credentials and SSH keys securely on disk.",
+            "It runs continuously as the main SSH server daemon process."
+        ],
+        "correct": 2  # Option 2 is correct
+    },
+    {
+        "id": 6,
+        "question": "In a Linux SSH session, which component actually handles password verification and account restriction checks?",
+        "choices": [
+            "The sshd daemon",
+            "The Pluggable Authentication Modules (PAM) system",
+            "The systemd service manager",
+            "The Linux kernel cryptographic subsystem"
+        ],
+        "correct": 2  # Option 2 is correct
+    },
+    {
+        "id": 7,
+        "question": "What is the primary purpose of an \"SSHFP\" (Secure Shell Fingerprint) DNS record?",
+        "choices": [
+            "It encrypts the SSH data stream using DNSSEC keys.",
+            "It allows clients to verify host fingerprints via DNS, preventing warning panics when a server updates its public key.",
+            "It stores client private keys securely on the domain nameserver.",
+            "It automatically generates new SSH host keys upon every reboot."
+        ],
+        "correct": 2  # Option 2 
+    },
+    {
+        "id": 8,
+        "question": "What is the primary function of the \"sslh\" utility on a Linux server?",
+        "choices": [
+            "Wrapping raw SSH traffic inside encrypted HTTP cookies to hide commands",
+            "Multiplexing traffic on a single port by inspecting packets to route SSH and HTTPS",
+            "Automatically provisioning SSL and TLS certificates for SSH host keys",
+            "Converting raw terminal streams into browser-compatible WebSockets"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 9,
+        "question": "Which configuration parameters are typically used to prevent idle SSH sessions from dropping due to network inactivity timeouts?",
+        "choices": [
+            "KeepAliveTimeout and MaxIdleTime inside the sshd_config file",
+            "ClientAliveInterval and ServerAliveInterval parameters",
+            "TCPKeepAlive and SessionTimeout within client network scripts",
+            "IdleSessionLimit and ConnectionTTL inside PAM configuration files"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 10,
+        "question": "What is the primary purpose of an SSH tunnel (port forwarding)?",
+        "choices": [
+            "Compressing log files for faster network transfer across local networks",
+            "Securely routing other network traffic and bypassing firewalls via encryption",
+            "Automatically provisioning SSL certificates for web servers via port 443",
+            "Replacing standard systemd service managers with remote network controllers"
+        ],
+        "correct": 2
     }
 ]
 
