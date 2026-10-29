@@ -58,6 +58,15 @@ h1 {
     transform: translateY(-2px); /* Subtle lift effect */
 }
 
+.btn-start:focus {
+	outline: none;
+}
+
+.btn-start:focus-visible {
+	outline: 3px solid #01853D;
+	outline-offset: 3px;
+}
+
 .quiz-question {
     font-size: 1.25rem;
     color: #2D3748;

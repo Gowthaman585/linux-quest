@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinuxQuest - Results</title>
+    <!-- Link your global stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+    		font-family: 'Segoe UI', Tahoma, Geneva, system-ui, -apple-system, sans-serif;
+    		background-color: #D7D7DE;
+    		display: flex;
+    		color: #333333;
+    		flex-direction: column;
+    		justify-content: center;
+    		align-items: center;
+    		min-height: 100vh;   /* was: height: 60vh */
+    		padding-top: 0;      /* NEW: cancels the 10vh from style.css */
+    		margin: 0;
+	}
+        .results-card {
+            background: #DCE3DC;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            width: 420px;
+        }
+        .score-circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid #51F52F;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            background: #E6F0E4;
+        }
+        .percentage {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #000000;
+        }
+        .score-text {
+            font-size: 1.1rem;
+            color: #000000;
+            margin-top: 5px;
+            margin-bottom: 20px; /* Adds space before the button */
+        }
+    </style>
+</head>
+<body>
+    <div class="results-card">
+        <h2>Completed!</h2>
+        
+        <div class="score-circle">
+            <div class="percentage">{{ percentage }}%</div>
+        </div>
+        
+        <div class="score-text">{{ score }}/{{ total }} ✅</div>
+        
+        <!-- This now uses your exact global .btn-start style -->
+        <a href="{{ url_for('main.home') }}" class="btn-start">Try Again</a>
+    </div>
+</body>
+</html>
